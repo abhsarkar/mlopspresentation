@@ -35,12 +35,12 @@ def predict_price(ownedcredit, age, genderType, married, vehicleown):
 
     #inputs = {c: df[c].values for c in df.columns}
     #for c in num_features:
-        inputs[c] = inputs[c].astype(np.float32)
+      #  inputs[c] = inputs[c].astype(np.float32)
     #for k in inputs:
-        inputs[k] = inputs[k].reshape((inputs[k].shape[0], 1))            
+       # inputs[k] = inputs[k].reshape((inputs[k].shape[0], 1))            
   
     #sess = rt.InferenceSession(artifact_dir + '/usedcar_xgboost.onnx')
-    pred_onx = sess.run(None, inputs)
+    #pred_onx = sess.run(None, inputs)
 
     predicted_score = float(500)
     return {f'Expected score {np.round(predicted_price, predicted_score)}' }
