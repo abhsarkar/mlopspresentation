@@ -15,7 +15,7 @@ cat_features = ['Car_Owned','Bike_Owned','Active_Loan','House_Own',
                 'Mobile_Tag','Homephone_Tag','Workphone_Working','Cleint_City_Rating']
 num_features = list(set(x_columns) - set(cat_features))
 
-def predict_price(ownedcredit, age, genderType, married, vehicleown):
+def predict_score(ownedcredit, age, genderType, married, vehicleown):
 
   #  inputs_dict = {'KM_Driven' : float(kmDriven), 
           
@@ -41,4 +41,4 @@ genderType = gr.inputs.Radio(['Male', 'Female', 'Others;'], default="Female", la
 married = gr.inputs.Radio(['Single', 'Married'], default="Single", label="Marriage Status")
 vehicleown = gr.inputs.Radio(['4 Wheeler', '2 Wheeler', 'Both','None'], default="None", label="Vehicle Owner Type")
 
-gr.Interface(predict_load, [ownedcredit, age, genderType, married, vehicleown], "text", live=False).launch(debug=True);
+gr.Interface(predict_score, [ownedcredit, age, genderType, married, vehicleown], "text", live=False).launch(debug=True);
