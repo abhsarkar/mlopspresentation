@@ -41,4 +41,4 @@ genderType = gr.inputs.Radio(['Male', 'Female', 'Others;'], default="Female", la
 married = gr.inputs.Radio(['Single', 'Married'], default="Single", label="Marriage Status")
 vehicleown = gr.inputs.Radio(['4 Wheeler', '2 Wheeler', 'Both','None'], default="None", label="Vehicle Owner Type")
 
-gr.Interface(predict_score, [ownedcredit, age, genderType, married, vehicleown], "text", live=False).launch(debug=True,share=true);
+#gr.Interface(predict_score, [ownedcredit, age, genderType, married, vehicleown], "text",live=False).launch(debug=True,share=true);
