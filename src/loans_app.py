@@ -18,18 +18,7 @@ num_features = list(set(x_columns) - set(cat_features))
 def predict_price(ownedcredit, age, genderType, married, vehicleown):
 
   #  inputs_dict = {'KM_Driven' : float(kmDriven), 
-              'Fuel_Type': fuelType, 
-              'age': float(age), 
-              'Transmission': transmission, 
-              'Owner_Type': ownerType, 
-              'Seats': float(seats), 
-              'make': make.lower(), 
-              'mileage_new': float(mileage), 
-              'engine_new': float(engine), 
-              'model': model.lower(), 
-              'power_new': float(power), 
-              'Location': location}
-
+          
    # df = pd.DataFrame(inputs_dict, index = [0])
     #print(df)
 
