@@ -1,3 +1,7 @@
+!pip install wandb
+!pip install onnxruntime
+!pip install -q gradio
+
 import os
 import wandb
 import pandas as pd
